@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://example.com/posts/onboarding-devops/</loc>
+    <lastmod>2024-04-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/case-studies/case-study-tfs-to-git/</loc>
+    <lastmod>2024-04-30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tech-recipes/iis-deploy/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tech-recipes/tfs-migration/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/pages/about/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/case-study/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/tech-recipes/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/tech-recipe/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/azure-devops/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/.net/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/iis/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/git/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tags/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://example.com/tech-recipes/az-devops-build-pipeline/</loc>
+    <lastmod>2024-05-02</lastmod>
+  </url>
+</urlset>
