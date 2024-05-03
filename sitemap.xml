@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://example.com/tags/azure-devops/</loc>
+    <loc>https://example.com/tags/iis/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
@@ -57,12 +57,12 @@
   </url>
   
   <url>
-    <loc>https://example.com/tags/iis/</loc>
+    <loc>https://example.com/tags/git/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/git/</loc>
+    <loc>https://example.com/tags/azure-devops/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
