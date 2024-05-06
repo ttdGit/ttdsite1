@@ -5,7 +5,7 @@
 	
 	<link href="/atom.xml" rel="self"/>
 	<link href=""/>
-	<updated>2024-05-05T22:53:37Z</updated>
+	<updated>2024-05-06T18:28:29Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>John Doe</name>
@@ -26,14 +26,15 @@
 		<updated>2024-04-29T00:00:00Z</updated>
 		<id>/posts/onboarding-devops/</id>
 		<content type="html">&lt;p&gt;The management of code from storage to final deployment involves a bewildering array of technologies and methodologies to choose from. These choices are driven be team size, preferences and institutional and project requirements.&lt;/p&gt;
-&lt;h3&gt;What technologies are in use or needed?&lt;/h3&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/mrNWcQiGrG-1024.avif 1024w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/mrNWcQiGrG-1024.webp 1024w&quot; /&gt;&lt;img alt=&quot;What technologies to use?&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/mrNWcQiGrG-1024.jpeg&quot; width=&quot;1024&quot; height=&quot;576&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h3&gt;An infrastructure analysis could drive some choices.&lt;/h3&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/a1IRWxXS54-1188.avif 1188w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/a1IRWxXS54-1188.webp 1188w&quot; /&gt;&lt;img alt=&quot;What technologies are in use.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/a1IRWxXS54-1188.png&quot; width=&quot;1188&quot; height=&quot;676&quot; /&gt;&lt;/picture&gt;
 &lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/HAi8A9e4Rw-1188.avif 1188w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/HAi8A9e4Rw-1188.webp 1188w&quot; /&gt;&lt;img alt=&quot;What technologies are in use.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/HAi8A9e4Rw-1188.png&quot; width=&quot;1188&quot; height=&quot;784&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Non-exhaustive typical use cases.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5&gt;Alternatives that manage all infrastructure for you.&lt;/h5&gt;
-&lt;p&gt;OutSystems...&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/gp-gr7vk6n-299.avif 299w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/gp-gr7vk6n-299.webp 299w&quot; /&gt;&lt;img alt=&quot;Low code technologies.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/gp-gr7vk6n-299.png&quot; width=&quot;299&quot; height=&quot;168&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;h3&gt;What practices are in use?&lt;/h3&gt;
 &lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/--ME5x17nD-779.avif 779w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/--ME5x17nD-779.webp 779w&quot; /&gt;&lt;img alt=&quot;What technologies are in use.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/--ME5x17nD-779.png&quot; width=&quot;779&quot; height=&quot;347&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;h3&gt;Where does code live?&lt;/h3&gt;
