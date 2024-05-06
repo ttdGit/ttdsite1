@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>DG Blog</title>
+	<title>DudeByte</title>
 	<subtitle>Lorem ipsum dolor sit amet consecuteor</subtitle>
 	
 	<link href="/atom.xml" rel="self"/>
 	<link href=""/>
-	<updated>2024-05-03T22:20:55Z</updated>
+	<updated>2024-05-05T22:53:37Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>John Doe</name>
 		<email>johndoe@example.com</email>
 	</author>
+	
+	<entry>
+		<title>Azure Devops</title>
+		<link href="/posts/azure-devops/"/>
+		<updated>2024-05-04T00:00:00Z</updated>
+		<id>/posts/azure-devops/</id>
+		<content type="html"></content>
+	</entry>
 	
 	<entry>
 		<title>Implementing Devops</title>

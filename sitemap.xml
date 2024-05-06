@@ -2,77 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://example.com/posts/onboarding-devops/</loc>
+    <loc>https://dudebyte.me/posts/onboarding-devops/</loc>
     <lastmod>2024-04-29</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/case-studies/case-study-tfs-to-git/</loc>
+    <loc>https://dudebyte.me/case-studies/case-study-tfs-to-git/</loc>
     <lastmod>2024-04-30</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tech-recipes/iis-deploy/</loc>
+    <loc>https://dudebyte.me/tech-recipes/iis-deploy/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tech-recipes/tfs-migration/</loc>
+    <loc>https://dudebyte.me/tech-recipes/tfs-migration/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://dudebyte.me/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/pages/about/</loc>
+    <loc>https://dudebyte.me/pages/about/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/case-study/</loc>
+    <loc>https://dudebyte.me/tags/featuredtech/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/tech-recipes/</loc>
+    <loc>https://dudebyte.me/tags/case-study/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/tech-recipe/</loc>
+    <loc>https://dudebyte.me/tags/tech-recipes/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/iis/</loc>
+    <loc>https://dudebyte.me/tags/tech-recipe/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/.net/</loc>
+    <loc>https://dudebyte.me/tags/azure-devops/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/git/</loc>
+    <loc>https://dudebyte.me/tags/.net/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/azure-devops/</loc>
+    <loc>https://dudebyte.me/tags/iis/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://dudebyte.me/tags/git/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tech-recipes/az-devops-build-pipeline/</loc>
+    <loc>https://dudebyte.me/tags/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dudebyte.me/tech-recipes/az-devops-build-pipeline/</loc>
     <lastmod>2024-05-02</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dudebyte.me/featuredtech/feature/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dudebyte.me/posts/azure-devops/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dudebyte.me/public/css/html5up-future-imperfect/</loc>
+    <lastmod>2024-05-04</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dudebyte.me/public/css/html5up-future-imperfect/single/</loc>
+    <lastmod>2024-05-04</lastmod>
   </url>
 </urlset>

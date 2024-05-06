@@ -2,66 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IIS .NET stack deployment | DG Blog</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>IIS .NET stack deployment | DudeByte</title>
   <meta name="description" content="IIS .NET stack deployment">
 
-  <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="/static/css/main.css" media="all">
-  <link rel="stylesheet" href="/css/prism-twilight.css" media="all">
+  <!-- <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon"> -->
+  <!-- <link rel="stylesheet" href="/static/css/main.css" media="all">  -->
+  <!-- <link rel="stylesheet" href="/css/prism-twilight.css" media="all"> -->
+  <!-- <link rel="stylesheet" href="/css/devtest.css" media="all">  -->
+  <link rel="stylesheet" href="/css/html5up-future-imperfect/assets/css/main.css" media="all">
   
 </head>
-<body>
+<body class="is-preload">
   
+  <div id="wrapper">
+  
+<header id="header">
+  <h1><a href="/">DudeByte</a></h1>
+  <nav class="links">
+    <ul>
+      
+        <li><a " href="/">
+          Home
+        </a></li>
+        <li><a " href="/pages/about/">
+          About
+        </a></li>
+        <li><a " href="/tags/">
+          Tags
+        </a></li>
+    </ul>
+  </nav>
+</header>
+
+
 <nav class="navbar">
   <div class="navbar__inner">
-    <a class="navbar__logo" href="/">DG Blog</a>
-
-    <div class="navbar__mobile-options">
-      <div class="navbar__button dark-toggle" aria-label="toggle dark theme">
-        <img src="/static/img/moon.svg" alt="">
-      </div>
-      <button class="navbar__button navbar__hamburger" aria-expanded="false" aria-label="toggle menu">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#333333">
-          <path d="M0 0h24v24H0z" fill="none"/>
-          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-        </svg>
-      </button>
-    </div>
-
     <div class="navbar__links">
       
-        <a class="navbar__link " href="/">
-          Home
-        </a>
-        <a class="navbar__link " href="/pages/about/">
-          About
-        </a>
-        <a class="navbar__link " href="/tags/">
-          Tags
-        </a>
-
-      <div class="navbar__button dark-toggle" aria-label="toggle dark theme">
-        <img src="/static/img/moon.svg" alt="">
-      </div>
-
     </div>
   </div>
 
-  <div class="navbar__mobile-links">
-    
-      <a class="navbar__mobile-link " href="/">
-        Home
-      </a>
-      <a class="navbar__mobile-link " href="/pages/about/">
-        About
-      </a>
-      <a class="navbar__mobile-link " href="/tags/">
-        Tags
-      </a>
-  </div>
+
 
 </nav>
+
 
   
 
@@ -120,9 +106,11 @@ msdeploy.exe -source:package=$package `
   <a href="/">Contact us today.</a>
 </div>
 
-  <footer class="footer">
-  &copy; 2024 - DG Blog
-</footer>
+  <!-- <footer class="footer">
+  &copy; 2024 - DudeByte
+</footer> -->
+  </div>
+  
 
   <script>
     const ham = document.querySelector('.navbar__hamburger')
