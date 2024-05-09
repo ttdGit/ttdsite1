@@ -2,12 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dudebyte.me/posts/Tech/onboarding-devops/</loc>
+    <loc>https://dudebyte.me/posts/tech/onboarding-devops/</loc>
     <lastmod>2024-04-29</lastmod>
   </url>
   
   <url>
-    <loc>https://dudebyte.me/posts/Tech/techpost1/</loc>
+    <loc>https://dudebyte.me/posts/tech/techpost1/</loc>
     <lastmod>2024-04-29</lastmod>
   </url>
   
@@ -42,27 +42,12 @@
   </url>
   
   <url>
-    <loc>https://dudebyte.me/tags/case-study/</loc>
-    <lastmod>2024-05-01</lastmod>
-  </url>
-  
-  <url>
     <loc>https://dudebyte.me/tags/tech-recipes/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://dudebyte.me/tags/tech-recipe/</loc>
-    <lastmod>2024-05-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dudebyte.me/tags/azure-devops/</loc>
-    <lastmod>2024-05-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://dudebyte.me/tags/.net/</loc>
+    <loc>https://dudebyte.me/tags/case-study/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
   
@@ -77,6 +62,21 @@
   </url>
   
   <url>
+    <loc>https://dudebyte.me/tags/tech-recipe/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dudebyte.me/tags/.net/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dudebyte.me/tags/azure-devops/</loc>
+    <lastmod>2024-05-01</lastmod>
+  </url>
+  
+  <url>
     <loc>https://dudebyte.me/tags/</loc>
     <lastmod>2024-05-01</lastmod>
   </url>
@@ -87,12 +87,12 @@
   </url>
   
   <url>
-    <loc>https://dudebyte.me/posts/Home/home/</loc>
+    <loc>https://dudebyte.me/posts/home/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
   <url>
-    <loc>https://dudebyte.me/posts/Tech/azure-devops/</loc>
+    <loc>https://dudebyte.me/posts/tech/azure-devops/</loc>
     <lastmod>2024-05-04</lastmod>
   </url>
   
