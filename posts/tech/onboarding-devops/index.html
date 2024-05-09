@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Implementing Devops | DudeByte</title>
+  <meta name="description" content="Onboarding devops into an existing team">
+
+  <link rel="shortcut icon" href="/static/img/DudeByteLogobyDesigner.png " type="image/x-icon">
+  <!-- <link rel="stylesheet" href="/static/css/main.css" media="all">  -->
+  <link rel="stylesheet" href="/css/prism-twilight.css" media="all">
+  <link rel="stylesheet" href="/css/devtest.css" media="all">
+  <link rel="stylesheet" href="/css/html5up-future-imperfect/assets/css/main.css" media="all">
+  
+</head>
+<body class="is-preload">
+  
+  <div id="wrapper">
+  
+<header id="header">
+  <h1><a href="/">DudeByte</a></h1>
+  <nav class="links">
+    <ul>
+      
+        <li><a " href="/">
+          Home
+        </a></li>
+        <li><a " href="/pages/about/">
+          About
+        </a></li>
+        <li><a " href="/tags/">
+          Tags
+        </a></li>
+        <li><a " href="/tech/">
+          Tech
+        </a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<nav class="navbar">
+  <div class="navbar__inner">
+    <div class="navbar__links">
+      
+    </div>
+  </div>
+
+
+
+</nav>
+
+
+  
+
+<div class="container-sm">
+  <h1>Implementing Devops</h1>
+  <p>The management of code from storage to final deployment involves a bewildering array of technologies and methodologies to choose from. These choices are driven be team size, preferences and institutional and project requirements.</p>
+<p><picture><source type="image/avif" srcset="/img/mrNWcQiGrG-1024.avif 1024w"><source type="image/webp" srcset="/img/mrNWcQiGrG-1024.webp 1024w"><img alt="What technologies to use?" loading="lazy" decoding="async" src="/img/mrNWcQiGrG-1024.jpeg" width="1024" height="576"></picture></p>
+<h3>An infrastructure analysis could drive some choices.</h3>
+<p><picture><source type="image/avif" srcset="/img/a1IRWxXS54-1188.avif 1188w"><source type="image/webp" srcset="/img/a1IRWxXS54-1188.webp 1188w"><img alt="What technologies are in use." loading="lazy" decoding="async" src="/img/a1IRWxXS54-1188.png" width="1188" height="676"></picture>
+<picture><source type="image/avif" srcset="/img/HAi8A9e4Rw-1188.avif 1188w"><source type="image/webp" srcset="/img/HAi8A9e4Rw-1188.webp 1188w"><img alt="What technologies are in use." loading="lazy" decoding="async" src="/img/HAi8A9e4Rw-1188.png" width="1188" height="784"></picture></p>
+<ul>
+<li>Non-exhaustive typical use cases.</li>
+</ul>
+<h5>Alternatives that manage all infrastructure for you.</h5>
+<p><picture><source type="image/avif" srcset="/img/gp-gr7vk6n-299.avif 299w"><source type="image/webp" srcset="/img/gp-gr7vk6n-299.webp 299w"><img alt="Low code technologies." loading="lazy" decoding="async" src="/img/gp-gr7vk6n-299.png" width="299" height="168"></picture></p>
+<h3>What practices are in use?</h3>
+<p><picture><source type="image/avif" srcset="/img/--ME5x17nD-779.avif 779w"><source type="image/webp" srcset="/img/--ME5x17nD-779.webp 779w"><img alt="What technologies are in use." loading="lazy" decoding="async" src="/img/--ME5x17nD-779.png" width="779" height="347"></picture></p>
+<h3>Where does code live?</h3>
+<p><picture><source type="image/avif" srcset="/img/tyVj-RkuMH-714.avif 714w"><source type="image/webp" srcset="/img/tyVj-RkuMH-714.webp 714w"><img alt="What technologies are in use." loading="lazy" decoding="async" src="/img/tyVj-RkuMH-714.png" width="714" height="283"></picture></p>
+<h3>What insights are needed?</h3>
+<p><picture><source type="image/avif" srcset="/img/kJ3-nhjXMT-716.avif 716w"><source type="image/webp" srcset="/img/kJ3-nhjXMT-716.webp 716w"><img alt="What technologies are in use." loading="lazy" decoding="async" src="/img/kJ3-nhjXMT-716.png" width="716" height="315"></picture></p>
+<p>The answers to these questions drive technological choices on how to build automation into the development cycle.</p>
+<p>We will approach the onboarding process in these phases.</p>
+<ul>
+<li>Analysis</li>
+<li>Architectual Decisions</li>
+<li>Proposed Solutions</li>
+<li>Adoption</li>
+<li>Technical Build</li>
+<li>Additional Team Training</li>
+<li>Recommendations for the future</li>
+</ul>
+<p><a href="/case-studies/case-study-tfs-to-git">Case Study (TFS to GIT migration)</a></p>
+
+
+  <br><hr>
+  
+    <b>Tags: </b>
+    
+      
+        <a href="/tags/tech">tech</a>, 
+      
+    
+      
+        <a href="/tags/tech">tech</a>
+      
+    
+  
+  <br><br>
+  <a href="/">&larr; Back home</a>
+  <br><br>
+  <a href="/">Contact us today.</a>
+</div>
+
+  <!-- <footer class="footer">
+  &copy; 2024 - DudeByte
+</footer> -->
+  </div>
+  
+
+  <script>
+    const ham = document.querySelector('.navbar__hamburger')
+    const menu = document.querySelector('.navbar__mobile-links')
+    const darkToggleButtons = document.querySelectorAll('.dark-toggle')
+
+    function changeDarkToggleBtnIcon () {
+      darkToggleButtons.forEach(btn => {
+        if (btn.querySelector('img').src.indexOf('/static/img/moon.svg') !== -1) {
+          btn.querySelector('img').src = "/static/img/sun.svg"
+        } else {
+          btn.querySelector('img').src = "/static/img/moon.svg"
+        }
+      })
+    }
+
+    if (
+      localStorage.prefsDark === 'true' || 
+      (
+        window.matchMedia && 
+        window.matchMedia('(prefers-color-scheme: dark)').matches && 
+        localStorage.prefsDark !== 'false')
+      ) {
+      document.body.classList.add('dark')
+      changeDarkToggleBtnIcon()
+    }
+
+    ham.addEventListener('click', () => {
+      menu.classList.toggle('navbar__mobile-links--open')
+
+      let prevState = JSON.parse(ham.getAttribute('aria-expanded'))
+      ham.setAttribute('aria-expanded', !prevState)
+    })
+
+    darkToggleButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        changeDarkToggleBtnIcon()
+
+        if (document.body.classList.contains('dark')) {
+          document.body.classList.remove('dark')
+          localStorage.prefsDark = 'false'
+        } else {
+          document.body.classList.add('dark')
+          localStorage.prefsDark = 'true'
+        }
+
+      })
+    })
+  </script>
+</body>
+</html>

@@ -5,7 +5,7 @@
 	
 	<link href="/atom.xml" rel="self"/>
 	<link href=""/>
-	<updated>2024-05-06T18:28:29Z</updated>
+	<updated>2024-05-09T23:03:31Z</updated>
 	<id>https://example.com/</id>
 	<author>
 		<name>John Doe</name>
@@ -13,46 +13,10 @@
 	</author>
 	
 	<entry>
-		<title>Azure Devops</title>
-		<link href="/posts/azure-devops/"/>
+		<title>DudeByte Landed</title>
+		<link href="/posts/Home/home/"/>
 		<updated>2024-05-04T00:00:00Z</updated>
-		<id>/posts/azure-devops/</id>
+		<id>/posts/Home/home/</id>
 		<content type="html"></content>
-	</entry>
-	
-	<entry>
-		<title>Implementing Devops</title>
-		<link href="/posts/onboarding-devops/"/>
-		<updated>2024-04-29T00:00:00Z</updated>
-		<id>/posts/onboarding-devops/</id>
-		<content type="html">&lt;p&gt;The management of code from storage to final deployment involves a bewildering array of technologies and methodologies to choose from. These choices are driven be team size, preferences and institutional and project requirements.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/mrNWcQiGrG-1024.avif 1024w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/mrNWcQiGrG-1024.webp 1024w&quot; /&gt;&lt;img alt=&quot;What technologies to use?&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/mrNWcQiGrG-1024.jpeg&quot; width=&quot;1024&quot; height=&quot;576&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h3&gt;An infrastructure analysis could drive some choices.&lt;/h3&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/a1IRWxXS54-1188.avif 1188w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/a1IRWxXS54-1188.webp 1188w&quot; /&gt;&lt;img alt=&quot;What technologies are in use.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/a1IRWxXS54-1188.png&quot; width=&quot;1188&quot; height=&quot;676&quot; /&gt;&lt;/picture&gt;
-&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/HAi8A9e4Rw-1188.avif 1188w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/HAi8A9e4Rw-1188.webp 1188w&quot; /&gt;&lt;img alt=&quot;What technologies are in use.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/HAi8A9e4Rw-1188.png&quot; width=&quot;1188&quot; height=&quot;784&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Non-exhaustive typical use cases.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5&gt;Alternatives that manage all infrastructure for you.&lt;/h5&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/gp-gr7vk6n-299.avif 299w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/gp-gr7vk6n-299.webp 299w&quot; /&gt;&lt;img alt=&quot;Low code technologies.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/gp-gr7vk6n-299.png&quot; width=&quot;299&quot; height=&quot;168&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h3&gt;What practices are in use?&lt;/h3&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/--ME5x17nD-779.avif 779w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/--ME5x17nD-779.webp 779w&quot; /&gt;&lt;img alt=&quot;What technologies are in use.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/--ME5x17nD-779.png&quot; width=&quot;779&quot; height=&quot;347&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h3&gt;Where does code live?&lt;/h3&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/tyVj-RkuMH-714.avif 714w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/tyVj-RkuMH-714.webp 714w&quot; /&gt;&lt;img alt=&quot;What technologies are in use.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/tyVj-RkuMH-714.png&quot; width=&quot;714&quot; height=&quot;283&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h3&gt;What insights are needed?&lt;/h3&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/img/kJ3-nhjXMT-716.avif 716w&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;/img/kJ3-nhjXMT-716.webp 716w&quot; /&gt;&lt;img alt=&quot;What technologies are in use.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/img/kJ3-nhjXMT-716.png&quot; width=&quot;716&quot; height=&quot;315&quot; /&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;p&gt;The answers to these questions drive technological choices on how to build automation into the development cycle.&lt;/p&gt;
-&lt;p&gt;We will approach the onboarding process in these phases.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Analysis&lt;/li&gt;
-&lt;li&gt;Architectual Decisions&lt;/li&gt;
-&lt;li&gt;Proposed Solutions&lt;/li&gt;
-&lt;li&gt;Adoption&lt;/li&gt;
-&lt;li&gt;Technical Build&lt;/li&gt;
-&lt;li&gt;Additional Team Training&lt;/li&gt;
-&lt;li&gt;Recommendations for the future&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&quot;/case-studies/case-study-tfs-to-git&quot;&gt;Case Study (TFS to GIT migration)&lt;/a&gt;&lt;/p&gt;
-</content>
 	</entry>
 </feed>

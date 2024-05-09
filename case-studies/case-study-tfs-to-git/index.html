@@ -7,7 +7,7 @@
   <title>TFS to GIT code migration | DudeByte</title>
   <meta name="description" content="TFS to GIT code migration">
 
-  <!-- <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon"> -->
+  <link rel="shortcut icon" href="/static/img/DudeByteLogobyDesigner.png " type="image/x-icon">
   <!-- <link rel="stylesheet" href="/static/css/main.css" media="all">  -->
   <link rel="stylesheet" href="/css/prism-twilight.css" media="all">
   <link rel="stylesheet" href="/css/devtest.css" media="all">
@@ -32,6 +32,9 @@
         <li><a " href="/tags/">
           Tags
         </a></li>
+        <li><a " href="/tech/">
+          Tech
+        </a></li>
     </ul>
   </nav>
 </header>
@@ -53,9 +56,61 @@
 
 <div class="container-sm">
   <h1>TFS to GIT code migration</h1>
-  <h2>Examining a TFS to GIT code migration.</h2>
-<h3>Requirements</h3>
-<p>Legacy client code exists in a datacenter TFS server. Code should be migrated to Azure Devops git repository. CI/CD should be put in place and the dev team will adopt a basic git flow development process.</p>
+  <h1>Examining a TFS to GIT code migration.</h1>
+<h2>Requirements</h2>
+<p>Legacy client code exists in an on-prem Team Foundation Server. For several reasons code should be migrated to a git repository and workflow.</p>
+<details class="mini-post"><summary>Why</summary>
+<div class="responsive-two-column-grid">
+  <div>
+  <H5>Legacy Centralized Version Control Systems</h5>
+<ul>
+<li>TFS as a distinct product is no longer supported. It has been absorbed into the Azure Devops product. More importantly, this type of CVCS imposes a number of down sides and much if not most technologists have moved away from it.</li>
+<li>Popularity shouldn't drive decisions but developers should be forced to use flint/steel to start a fire when we have flame-throwers. It is telling that in a recent StackOverflow <a href="https://survey.stackoverflow.co/2022/#section-version-control-version-control-systems"><b>survey</b></a>, more than 90% of respondents stated that git, a distributed version control system was the chosen solution.   TFS is no longer even listed a choice for platform on these <a href="https://survey.stackoverflow.co/2022/#section-version-control-version-control-platforms"><b>surveys</b></a> anymore due to lack of use.</li>
+<li>Issues sited as unfavorable with CVCSs are:
+<ul>
+<li>Potential single point of failure as is it runs on a single server. Must be in network to push changes, limiting where and when developers can commit.</li>
+<li>Clunky development workflows, merging and branching can be confusing. This drives a fear of branching</li>
+<li>Tags as a merge tracking technique get employed which are dependent on team adherence and are fallible.</li>
+</ul>
+</li>
+</ul>
+  </div>
+  <div>  
+  <H5>Distributed Version Control Systems</h5>
+<ul>
+<li>Distributed Distributed version control, such as Git, performing local file tracking on a complete copy of the repository, offer fast and easy branching on each devs station. This enables team flexibility and efficiency.</li>
+<li>Branches get merged to a main line that can be centralized to a server. But because each dev caries a copy of the entire repo, single points of failure are minimized. Additionally, the process of merging branches into the main-line provides a time for code reviews, first line protections for the code base and change report tracking.</li>
+<li>With a thoughtful git branching strategy and a well built deployment pipeline, manual change tagging strategies are not required and development iterations are stream-lined.</li>
+</ul>
+  </div>
+  <a href="/tech-recipes/tfs-migration">See Technical Detail.</a>
+</details>
+CI/CD should be put in place and the dev team will adopt a basic git flow development process. History should be migrated if possible.
+<p>Per the Architectural Decisions listed below, Azure Devops will be used for the git repos.</p>
+<p>Microsoft Recommends for a successful TFS to GIT migration, teams should:</p>
+<ul>
+<li>Evaluate current tools and processes.</li>
+<li>Select a Git branching strategy.</li>
+<li>Prefer not to migrate history. But 180 days max if so.</li>
+<li>Maintain the previous version control system.</li>
+<li>Remove binary files, executables, and tools from source control.</li>
+<li>Train teams in Git concepts and practices.</li>
+<li>Test the migration to Git.</li>
+</ul>
+<p>In our case we were able to :</p>
+<ul>
+<li>Perform an analysis of the current tools and processes.</li>
+<li>Select and demonstrate a working Git branching strategy. [Modified Git-Flow], supported by pull request code reviews. The strategy supports the team from development-time integration processes, all the way through promotion to production through gated approvals and hot-fix strategies.</li>
+<li>Branch strategy included a secondary development main line for future features with integration strategies into the mainline of development.</li>
+<li>Migrate 1 year of history.</li>
+<li>Maintain the previous version control system.</li>
+<li>Maintain the previous code repos in Azure Devops as a baby-step toward team migration.</li>
+<li>Move binary files, executables, and tools to appropriate storage like (Azure Artifacts, Network Storage and Infrastructure/Data Repositories).</li>
+<li>Train and provide documentation to teams on Git concepts, Devops concepts, practices and support requirements..</li>
+<li>Test and perform the migration to Git.</li>
+<li>Test all branching, merge, build and deploy to multiple environments.</li>
+</ul>
+<p>We were not able to force team adoption and transition due to turnover, differing corporate priorities and lack of commitment to finally 'pull the trigger'.</p>
 <p>The basic architecture of the project is a 3 tier IIS web site deployment with .NET backend services and SQL data layer. Additionally, a proprietary 3rd party 'low code' platform is used to provide data structure, UI elements and business process management workflows.</p>
 <h3>Technical Challenges</h3>
 <p>After spending time with the team and performing an analysis of the system and current processes, a number of challenges were presented.</p>
@@ -124,7 +179,7 @@ Have you reviewed your system? Are you following best practices? Are you standin
  'Diff' software is used to copy changed/new files. This enables in-place 'fixes' (see above) to local and server locations to stay in place. (but not driven into the repository.)
 <h5>Solution</h5>
 The repository should be the source of truth. 
-Environment specific changes captured into 'configuration' solutions (.config transfomations etc.) that will be driven by automation.
+Environment specific changes captured into 'configuration' solutions (.config transformations etc.) that will be driven by automation.
 </div>
 </div>
 <div class="responsive-two-column-grid">
@@ -150,7 +205,7 @@ Split these applications into different locations (fix the build configs) so the
 </div>
 <div class="responsive-two-column-grid">
 <div>
-<h5>Additional challenges to adress.</h5>
+<h5>Additional challenges to address.</h5>
 </div>
 <div>
 * Command line utilities for application data transform/load need to be run with differing command line arguments depending on type of data and if the data is new or being updated.
@@ -168,24 +223,24 @@ Split these applications into different locations (fix the build configs) so the
 <li>Onboarding of new members require many manual time intensive process.
 <ul>
 <li>Large sql relational data (cleaned copies of production data sets) &gt; 50GB must be requested for local dev.</li>
-<li>Special requests to IT are needed to increase vm space to accommodate the large sql databas</li>
+<li>Special requests to IT are needed to increase vm space to accommodate the large sql database</li>
 </ul>
 </li>
 <li>Solutions
 <ul>
-<li>Stipped down developer golden data set would be prefered.</li>
+<li>Stripped down developer golden data set would be preferred.</li>
 <li>Establish PR process. This would facilitate at least a minimum code review.</li>
 <li>Have operations establish a proper vm image with tool chains and space requirements met.</li>
 </ul>
 </li>
 </ul>
-<h3>Architectural Decisions</h3>
+<p>###Architectural Decisions</p>
 <ul>
 <li>The applications are ASP.NET 4 and .NET Winform projects are deploying to Windows IIS servers. The client is utilizing Azure infrastructure and Azure Devops Tasks to run scrum iterations already.
 <ul>
 <li>So we will use Azure Devops Git repositories and <strong><a href="/tech-recipes/az-devops-build-pipeline">Azure build/release pipelines.</a></strong></li>
 <li>A deployment agent will be installed on a corporate vm with network access to Devops as well as dev/test servers.</li>
-<li>Microsfot WebDepoy will be used for website <strong><a href="/tech-recipes/iis-deploy">distribution</a></strong>.</li>
+<li>Microsoft WebDepoy will be used for website <strong><a href="/tech-recipes/iis-deploy">distribution</a></strong>.</li>
 </ul>
 </li>
 <li>git-tfs will be used to <strong><a href="/tech-recipes/tfs-migration">migrate</a></strong> code and history from TFS to Azure Devops Git repos.</li>

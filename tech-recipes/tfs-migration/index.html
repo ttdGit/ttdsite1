@@ -7,7 +7,7 @@
   <title>IIS .NET stack deployment | DudeByte</title>
   <meta name="description" content="IIS .NET stack deployment">
 
-  <!-- <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon"> -->
+  <link rel="shortcut icon" href="/static/img/DudeByteLogobyDesigner.png " type="image/x-icon">
   <!-- <link rel="stylesheet" href="/static/css/main.css" media="all">  -->
   <link rel="stylesheet" href="/css/prism-twilight.css" media="all">
   <link rel="stylesheet" href="/css/devtest.css" media="all">
@@ -32,6 +32,9 @@
         <li><a " href="/tags/">
           Tags
         </a></li>
+        <li><a " href="/tech/">
+          Tech
+        </a></li>
     </ul>
   </nav>
 </header>
@@ -54,12 +57,22 @@
 <div class="container-sm">
   <h1>IIS .NET stack deployment</h1>
   <h1>Migrating TFS repos to git.</h1>
-<p>To import TFS history as well as the latest code; we use the utility ‘git-tfs’. https://github.com/git-tfs/git-tfs</p>
+<p>Legacy client code exists in an on-pre TFS server. Code should be migrated to Azure Devops git repository. CI/CD should be put in place and the dev team will adopt a basic git flow development process.</p>
+<p>Services like Azure Devops provide tooling to import small simple TFVC repositories that have already been &quot;cleaned up&quot;. But repos outside of these parameters will need special handling.</p>
+<p>Microsoft recommends:</p>
+<ul>
+<li>To import only the latest version of the source code and not migrate history. If TFVC history is simple, there's an option to migrate some history, up to 180 days.</li>
+<li>Exclude binary assets like images, scientific data sets, or game models from the repository. These assets should use the Git LFS (Large File Storage) extension, which the import tool doesn't configure.</li>
+<li>Keep the imported repository below 1GB in size.</li>
+<li>If the repository doesn't meet these requirements, use the Git-TFS tool to do your migration instead.</li>
+</ul>
+<p>In our case-study, we had the requirement to migrate a 1.8GB repository with history. We were able to extract over a years worth of history and provided strategies and tools to reduce the size of the repo in future phases.</p>
+<p>Due to these requirements we use the git-tfs 'bridging' utility. https://github.com/git-tfs/git-tfs</p>
 <p>Example :
-We can use arguments to selectivlly pull history.</p>
-<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> tfs clone https://tf.fppaco.org/tfs/FPPA $/<span class="token string">"FPPA Source/FW6Upgrade"</span> TFS_CLONE_NEW <span class="token parameter variable">--from</span><span class="token operator">=</span><span class="token number">13678</span> <span class="token parameter variable">--to</span><span class="token operator">=</span><span class="token number">14681</span></code></pre>
-<p>This pulls the history in FW6Upgrade from change set 13678 to 14681 into a new git repository under subdirectory TFS_CLONE_NEW . This will take a few hours.
-After git-tfs is finished, cd into the new repo directory and add the Devops Git origin.</p>
+We can use arguments to selectively pull history.</p>
+<pre class="language-bash" tabindex="0"><code class="language-bash"><span class="token function">git</span> tfs clone https://tf.OurProjec.org/tfs/FPPA $/<span class="token string">"Project Source/BranchName"</span> CLONE_NEW <span class="token parameter variable">--from</span><span class="token operator">=</span><span class="token number">13678</span> <span class="token parameter variable">--to</span><span class="token operator">=</span><span class="token number">14681</span></code></pre>
+<p>This pulls the history in BranchName from change set 13678 to 14681 into a new git repository under subdirectory CLONE_NEW . This will take a few hours.
+After git-tfs is finished, cd into the new repo directory and add the Devops Git origin.Add the new Git repository origin.</p>
 <ul>
 <li>git remote add origin git@ssh.dev.azure.com:v3/ORG/PROJECT/ REPO_NAME</li>
 <li>Notice that SSH is used instead of HTTP. This is due to the large binary files in TFS and helps the upload process.</li>

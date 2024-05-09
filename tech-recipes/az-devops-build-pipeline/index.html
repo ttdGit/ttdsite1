@@ -7,7 +7,7 @@
   <title>Azure Build Pipeline .NET apps | DudeByte</title>
   <meta name="description" content="Azure Build Pipeline .NET apps">
 
-  <!-- <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon"> -->
+  <link rel="shortcut icon" href="/static/img/DudeByteLogobyDesigner.png " type="image/x-icon">
   <!-- <link rel="stylesheet" href="/static/css/main.css" media="all">  -->
   <link rel="stylesheet" href="/css/prism-twilight.css" media="all">
   <link rel="stylesheet" href="/css/devtest.css" media="all">
@@ -32,6 +32,9 @@
         <li><a " href="/tags/">
           Tags
         </a></li>
+        <li><a " href="/tech/">
+          Tech
+        </a></li>
     </ul>
   </nav>
 </header>
@@ -53,7 +56,7 @@
 
 <div class="container-sm">
   <h1>Azure Build Pipeline .NET apps</h1>
-  <p>Azure Devops pipelines are writen in yaml.</p>
+  <p>Azure Devops pipelines are written in yaml.</p>
 <p>Pipeline start with a definition of what triggers the build. The following will trigger on check ins to the dev branch for Project1, Project2 and Project_Shared_Libs.</p>
 <pre class="language-yaml" tabindex="0"><code class="language-yaml"><span class="token key atrule">trigger</span><span class="token punctuation">:</span>
   <span class="token key atrule">branches</span><span class="token punctuation">:</span>
@@ -64,8 +67,8 @@
       <span class="token punctuation">-</span> Solution/Project1_Frontend/<span class="token important">**</span>
       <span class="token punctuation">-</span> Solution/Project2_Frontend/<span class="token important">**</span>
       <span class="token punctuation">-</span> Solution/Project_Shared_Libs/<span class="token important">**</span></code></pre>
-<p>The pool identifies what type of vm is to be used, and if it hosted by you or Microsoft.
-Windows</p>
+<p>The pool identifies what type of vm is to be used, and if it hosted by you or Microsoft.</p>
+<p>Windows</p>
 <pre class="language-yaml" tabindex="0"><code class="language-yaml"><span class="token key atrule">pool</span><span class="token punctuation">:</span>
   <span class="token key atrule">vmImage</span><span class="token punctuation">:</span> <span class="token string">'windows-latest'</span></code></pre>
 <p>Linux</p>
@@ -73,7 +76,7 @@ Windows</p>
   <span class="token key atrule">vmImage</span><span class="token punctuation">:</span> <span class="token string">'ubuntu-latest'</span></code></pre>
 <p>Self hosted.</p>
 <pre class="language-yaml" tabindex="0"><code class="language-yaml"><span class="token key atrule">pool</span><span class="token punctuation">:</span> your<span class="token punctuation">-</span>pool<span class="token punctuation">-</span>name</code></pre>
-<p>Use the variables section to parameterize build configurations and link to Azure Varialbe Group Library that can supply sensitive data.</p>
+<p>Use the variables section to parameterize build configurations and link to Azure Variable Group Library that can supply sensitive data.</p>
 <pre class="language-yaml" tabindex="0"><code class="language-yaml"><span class="token key atrule">variables</span><span class="token punctuation">:</span>
 <span class="token punctuation">-</span> <span class="token key atrule">group</span><span class="token punctuation">:</span> NAME_OF_VARIABLE_GROUP_LINK
 <span class="token punctuation">-</span> <span class="token key atrule">name</span><span class="token punctuation">:</span> solution
